@@ -34,9 +34,10 @@
     left: 50%;
     font-size: 18px;
     transform: translateX(-50%);
-    animation: fadeOut 1000ms ;
+    animation: fadeOut 1200ms ;
 }
 
 @keyframes fadeOut {
-    100%{opacity: 0;top:-100px;}
+    10%{top: -25px;}
+    100%{opacity: 0;top:-70px;}
 }
