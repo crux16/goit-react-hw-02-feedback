@@ -1,0 +1,42 @@
+.list {
+    display: flex;
+    gap: 25px;
+    margin-left: 5px;
+}
+
+.button {
+    text-transform: capitalize;
+    border: 1px solid #0008;
+    color: gold;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    border-radius: 2px;
+}
+
+.button:hover,
+.button:focus{
+    background-color: gold;
+    color: #fff;
+}
+
+.button:active{
+    color: gold;
+    background-color: transparent;
+}
+
+.button:active::after{
+    content: "+1";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 18px;
+    transform: translateX(-50%);
+    animation: fadeOut 1000ms ;
+}
+
+@keyframes fadeOut {
+    100%{opacity: 0;top:-100px;}
+}
